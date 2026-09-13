@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="color-scheme" content="light dark">
+  <title>Panel Status Kamar — Kost H. Saifullah</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233A86FF'%3E%3Cpath d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'/%3E%3Cpolyline points='9 22 9 12 15 12 15 22' fill='white'/%3E%3C/svg%3E">
+
+  <style>
+    /* ============================================================
+       PANEL STATUS KAMAR — gaya khusus admin.html
+       ------------------------------------------------------------
+       admin.html tidak memuat css/style.css, jadi seluruh token warna
+       dan komponennya berdiri sendiri di sini. Penamaan tetap BEM
+       berbahasa Indonesia seperti sisa repo ini.
+
+       Warna status tidak ditulis berulang di tiap komponen: setiap
+       pembungkus berstatus menyetel --aksen / --aksen-lat / --aksen-teks,
+       lalu anak-anaknya cukup memakai var(--aksen).
+       ============================================================ */
+
+    /* Tema dipilih JS lewat atribut data-tema di <html>, bukan langsung oleh
+       @media (prefers-color-scheme). js/tema.js yang membaca pilihan tersimpan
+       ATAU preferensi sistem, lalu menuliskannya sekali sebelum halaman tampil.
+       Dengan begitu palet gelap cukup ditulis SATU kali di bawah — kalau dipecah
+       antara blok @media dan blok atribut, keduanya wajib disamakan terus dan
+       di situlah bug warna biasanya muncul. */
+    :root,
+    :root[data-tema="terang"] {
+      color-scheme: light;
+
+      --biru: #3A86FF;
+      --biru-tua: #2563EB;
+      --biru-lat: #EEF4FF;
+      --biru-teks: #1D4ED8;
+      /* Isi tombol utama sengaja lebih tua dari --biru: teks putih di atas
+         #3A86FF hanya 3,5:1, belum lolos ambang 4,5:1 untuk teks sekecil ini. */
+      --biru-tombol: #2563EB;
+      --biru-tombol-sorot: #1D4ED8;
+      --biru-atas: #FFFFFF;
+      --biru-bayang: rgba(37, 99, 235, .26);
+      --biru-bayang-kuat: rgba(37, 99, 235, .34);
+
+      --latar: #F4F6FA;
+      --permukaan: #FFFFFF;
+      --permukaan-2: #F5F8FC;
+      --kaca: rgba(255, 255, 255, .97);
+
+      --teks: #0F172A;
+      --teks-lembut: #5A6B85;
+      --teks-samar: #93A1B7;
+      --garis: #E3E9F1;
+      --garis-tipis: #EDF1F7;
+
+      --ok: #059669;
+      --ok-lat: #E9FBF3;
+      --ok-teks: #047857;
+      --sedang: #D97706;
+      --sedang-lat: #FEF6E7;
+      --sedang-teks: #92400E;
+      --penuh: #DC2626;
+      --penuh-lat: #FDEDED;
+      --penuh-teks: #B91C1C;
+
+      /* Nilai netral, ditimpa oleh modifier status di tiap komponen. */
+      --aksen: #93A1B7;
+      --aksen-lat: #F5F8FC;
+      --aksen-teks: #5A6B85;
+
+      --r-sm: 10px;
+      --r-md: 14px;
+      --r-lg: 20px;
+
+      --bayang-sm: 0 1px 2px rgba(15, 23, 42, .04), 0 2px 8px rgba(15, 23, 42, .045);
+      --bayang-md: 0 6px 14px rgba(15, 23, 42, .07), 0 14px 32px rgba(15, 23, 42, .06);
+      --bayang-tempel: 0 1px 2px rgba(15, 23, 42, .05), 0 8px 24px rgba(15, 23, 42, .08);
+
+      --transisi: 180ms cubic-bezier(.4, 0, .2, 1);
+    }
+
+    :root[data-tema="gelap"] {
+      color-scheme: dark;
+
+      --biru: #5B9CFF;
+      --biru-tua: #7DB1FF;
+      --biru-lat: rgba(91, 156, 255, .15);
+      --biru-teks: #A9CBFF;
+      /* Kebalikan mode terang: birunya yang terang, jadi teks di atasnya gelap.
+         Teks putih di atas #5B9CFF hanya 2,7:1. */
+      --biru-tombol: #5B9CFF;
+      --biru-tombol-sorot: #7DB1FF;
+      --biru-atas: #0A1020;
+      --biru-bayang: rgba(91, 156, 255, .2);
+      --biru-bayang-kuat: rgba(91, 156, 255, .28);
+
+      --latar: #0A1020;
+      --permukaan: #121A2C;
+      --permukaan-2: #18223A;
+      --kaca: rgba(18, 26, 44, .97);
+
+      --teks: #E9EEF8;
+      --teks-lembut: #98A7C1;
+      --teks-samar: #6E7F9C;
+      --garis: #24304A;
+      --garis-tipis: #1C2740;
+
+      --ok: #34D399;
+      --ok-lat: rgba(52, 211, 153, .15);
+      --ok-teks: #6EE7B7;
+      --sedang: #FBBF24;
+      --sedang-lat: rgba(251, 191, 36, .15);
+      --sedang-teks: #FCD34D;
+      --penuh: #F87171;
+      --penuh-lat: rgba(248, 113, 113, .15);
+      --penuh-teks: #FCA5A5;
+
+      --aksen: #6E7F9C;
+      --aksen-lat: #18223A;
+      --aksen-teks: #98A7C1;
+
+      --bayang-sm: 0 1px 2px rgba(0, 0, 0, .3), 0 2px 8px rgba(0, 0, 0, .22);
+      --bayang-md: 0 6px 14px rgba(0, 0, 0, .34), 0 14px 32px rgba(0, 0, 0, .28);
+      --bayang-tempel: 0 1px 2px rgba(0, 0, 0, .34), 0 8px 24px rgba(0, 0, 0, .4);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    /* Beberapa komponen di bawah memakai display: flex, yang menimpa aturan
+       bawaan browser untuk [hidden]. Tanpa baris ini, menyembunyikan .bilah
+       atau .toast lewat el.hidden tidak berpengaruh apa-apa. */
+    [hidden] { display: none !important; }
+
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--latar);
+      color: var(--teks);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .bungkus { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+
+    .lewati {
+      position: absolute; left: 50%; top: 0; transform: translate(-50%, -140%);
+      z-index: 90; background: var(--permukaan); color: var(--teks);
+      border: 1px solid var(--garis); border-radius: 0 0 var(--r-sm) var(--r-sm);
+      padding: 10px 18px; font-size: .85rem; font-weight: 600; text-decoration: none;
+      box-shadow: var(--bayang-md); transition: transform var(--transisi);
+    }
+
+    .lewati:focus { transform: translate(-50%, 0); }
+
+    :focus-visible { outline: 2px solid var(--biru); outline-offset: 2px; }
+
+    /* ---------- Kepala halaman ---------- */
+    .kepala {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(150deg, #1D2A45 0%, #101B31 55%, #0E1729 100%);
+      color: #fff;
+      padding: 34px 0 74px;
+    }
+
+    /* Cahaya biru lembut supaya kepala tidak terasa seperti balok hitam.
+       Titik pusatnya sengaja di tepi atas: cahaya yang berpusat di tepi BAWAH
+       akan terpotong rata oleh batas .kepala dan malah terlihat seperti garis. */
+    .kepala::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(65% 105% at 84% 0%, rgba(58, 134, 255, .34) 0%, transparent 62%);
+    }
+
+    /* Kisi tipis yang memudar ke bawah — murni CSS, tanpa file gambar. */
+    /* pointer-events: none WAJIB — lapisan ini anak terakhir .kepala, jadi ia
+       digambar di atas .kepala__isi dan akan menelan klik tombol tema. */
+    .kepala::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, .05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .05) 1px, transparent 1px);
+      background-size: 36px 36px;
+      -webkit-mask-image: radial-gradient(ellipse 80% 100% at 50% 0%, #000 0%, transparent 72%);
+      mask-image: radial-gradient(ellipse 80% 100% at 50% 0%, #000 0%, transparent 72%);
+    }
+
+    .kepala__isi {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .kepala__merek {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-weight: 600;
+      font-size: .78rem;
+      letter-spacing: .5px;
+      color: rgba(255, 255, 255, .78);
+      background: rgba(255, 255, 255, .07);
+      border: 1px solid rgba(255, 255, 255, .13);
+      padding: 6px 14px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .kepala__merek svg { color: #93C5FD; }
+
+    .kepala h1 {
+      font-size: clamp(1.45rem, 1.1rem + 1.6vw, 2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -.6px;
+    }
+
+    .kepala__sub {
+      color: rgba(255, 255, 255, .75);
+      font-size: .92rem;
+      margin-top: 7px;
+      max-width: 48ch;
+    }
+
+    .kepala__alat {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* ---------- Pemilih tema ---------- */
+    /* Kepala halaman selalu gelap di kedua tema, jadi komponen ini memakai
+       warna putih transparan langsung, bukan token --permukaan dan kawan-kawan
+       yang ikut berbalik. Yang terpilih jadi pil putih solid berteks gelap
+       supaya kontrasnya tinggi di mode terang maupun gelap. */
+    .tema {
+      display: inline-flex;
+      gap: 3px;
+      padding: 3px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .07);
+      border: 1px solid rgba(255, 255, 255, .14);
+    }
+
+    .tema__pilih {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font: inherit;
+      font-size: .8rem;
+      font-weight: 500;
+      padding: 6px 13px;
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: rgba(255, 255, 255, .8);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background var(--transisi), color var(--transisi);
+    }
+
+    .tema__pilih svg { flex: none; }
+
+    .tema__pilih:hover { color: #fff; background: rgba(255, 255, 255, .12); }
+
+    .tema__pilih[aria-pressed="true"] {
+      font-weight: 600;
+      color: #101B31;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .35);
+    }
+
+    /* Garis fokus biru bisa tenggelam di atas kepala yang gelap. */
+    .kepala :focus-visible { outline-color: #93C5FD; }
+
+    .kepala__tautan {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .84rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, .85);
+      text-decoration: none;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .16);
+      border-radius: 999px;
+      padding: 9px 17px;
+      transition: background var(--transisi), border-color var(--transisi), transform var(--transisi);
+    }
+
+    .kepala__tautan:hover {
+      background: rgba(255, 255, 255, .16);
+      border-color: rgba(255, 255, 255, .3);
+      transform: translateY(-1px);
+    }
+
+    /* ---------- Kartu umum ---------- */
+    .kartu {
+      background: var(--permukaan);
+      border: 1px solid var(--garis);
+      border-radius: var(--r-lg);
+      box-shadow: var(--bayang-sm);
+    }
+
+    .lencana {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      flex: none;
+      border-radius: 11px;
+      background: var(--biru-lat);
+      color: var(--biru-teks);
+    }
+
+    /* ---------- Panduan (bisa dilipat) ---------- */
+    /* Ditarik naik menimpa kepala supaya halamannya tidak terasa bertumpuk datar. */
+    .panduan { margin-top: -44px; position: relative; overflow: hidden; }
+
+    .panduan__kepala {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      padding: 18px 24px;
+      cursor: pointer;
+      list-style: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+
+    .panduan__kepala::-webkit-details-marker { display: none; }
+
+    .panduan__kepala h2 { font-size: 1rem; font-weight: 600; flex: 1; }
+
+    .panduan__panah {
+      flex: none;
+      color: var(--teks-lembut);
+      transition: transform var(--transisi);
+    }
+
+    .panduan[open] .panduan__panah { transform: rotate(180deg); }
+
+    .panduan__isi { padding: 0 24px 22px; font-size: .9rem; }
+
+    .panduan ol { margin: 0; counter-reset: langkah; list-style: none; }
+
+    .panduan li {
+      counter-increment: langkah;
+      position: relative;
+      padding-left: 34px;
+      margin-bottom: 9px;
+      color: var(--teks-lembut);
+    }
+
+    .panduan li:last-child { margin-bottom: 0; }
+
+    .panduan li::before {
+      content: counter(langkah);
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--biru-lat);
+      color: var(--biru-teks);
+      font-size: .74rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .panduan__catatan {
+      margin-top: 16px;
+      padding: 13px 16px;
+      border-radius: var(--r-sm);
+      border: 1px dashed var(--garis);
+      background: var(--permukaan-2);
+      color: var(--teks-lembut);
+      font-size: .84rem;
+    }
+
+    /* ---------- Ringkasan angka ---------- */
+    .ringkas { margin: 24px 0 20px; }
+
+    .ringkas__kisi {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+
+    .ringkas__kartu {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      background: var(--permukaan);
+      border: 1px solid var(--garis);
+      border-radius: var(--r-md);
+      box-shadow: var(--bayang-sm);
+      padding: 15px 17px;
+      transition: transform var(--transisi), box-shadow var(--transisi), border-color var(--transisi);
+    }
+
+    .ringkas__kartu:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--bayang-md);
+      border-color: var(--aksen);
+    }
+
+    .ringkas__kartu--tersedia { --aksen: var(--ok); --aksen-lat: var(--ok-lat); --aksen-teks: var(--ok-teks); }
+    .ringkas__kartu--hampir-penuh { --aksen: var(--sedang); --aksen-lat: var(--sedang-lat); --aksen-teks: var(--sedang-teks); }
+    .ringkas__kartu--tidak-tersedia { --aksen: var(--penuh); --aksen-lat: var(--penuh-lat); --aksen-teks: var(--penuh-teks); }
+    .ringkas__kartu--total { --aksen: var(--biru); --aksen-lat: var(--biru-lat); --aksen-teks: var(--biru-teks); }
+
+    .ringkas__ikon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      flex: none;
+      border-radius: 12px;
+      background: var(--aksen-lat);
+      color: var(--aksen-teks);
+    }
+
+    .ringkas__angka {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -.8px;
+      font-variant-numeric: tabular-nums;
+      color: var(--aksen-teks);
+    }
+
+    .ringkas__label {
+      display: block;
+      font-size: .76rem;
+      font-weight: 500;
+      color: var(--teks-lembut);
+      letter-spacing: .2px;
+    }
+
+    /* Bilah proporsi: satu garis yang langsung memperlihatkan komposisi 21 kamar. */
+    .proporsi {
+      display: flex;
+      height: 9px;
+      margin-top: 12px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: var(--permukaan);
+      border: 1px solid var(--garis);
+    }
+
+    .proporsi__seg { transition: width var(--transisi); }
+    .proporsi__seg--tersedia { background: var(--ok); }
+    .proporsi__seg--hampir-penuh { background: var(--sedang); }
+    .proporsi__seg--tidak-tersedia { background: var(--penuh); }
+
+    /* ---------- Bilah aksi menempel ---------- */
+    .bilah {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 11px 14px;
+      margin-bottom: 22px;
+      border: 1px solid var(--garis);
+      border-radius: var(--r-md);
+      background: var(--kaca);
+      -webkit-backdrop-filter: blur(14px) saturate(160%);
+      backdrop-filter: blur(14px) saturate(160%);
+      box-shadow: var(--bayang-tempel);
+    }
+
+    .bilah__hitung {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: .82rem;
+      font-weight: 500;
+      color: var(--teks-lembut);
+      padding-left: 4px;
+    }
+
+    .bilah__titik {
+      width: 8px;
+      height: 8px;
+      flex: none;
+      border-radius: 50%;
+      background: var(--teks-samar);
+      transition: background var(--transisi), box-shadow var(--transisi);
+    }
+
+    .bilah--berubah .bilah__hitung { color: var(--biru-teks); font-weight: 600; }
+    .bilah--berubah .bilah__titik { background: var(--biru); box-shadow: 0 0 0 3px var(--biru-lat); }
+
+    .bilah__aksi { display: flex; flex-wrap: wrap; gap: 8px; }
+
+    /* ---------- Tombol ---------- */
+    .tombol {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font: inherit;
+      font-size: .84rem;
+      font-weight: 600;
+      letter-spacing: .1px;
+      padding: 10px 18px;
+      border: 1px solid transparent;
+      border-radius: var(--r-sm);
+      background: var(--biru-tombol);
+      color: var(--biru-atas);
+      cursor: pointer;
+      white-space: nowrap;
+      box-shadow: 0 2px 8px var(--biru-bayang);
+      transition: transform var(--transisi), box-shadow var(--transisi), background var(--transisi), border-color var(--transisi), color var(--transisi);
+    }
+
+    .tombol svg { flex: none; }
+
+    .tombol:hover { background: var(--biru-tombol-sorot); transform: translateY(-1px); box-shadow: 0 5px 16px var(--biru-bayang-kuat); }
+    .tombol:active { transform: translateY(0); box-shadow: 0 1px 4px var(--biru-bayang); }
+
+    .tombol--hantu {
+      background: var(--permukaan);
+      color: var(--teks-lembut);
+      border-color: var(--garis);
+      box-shadow: none;
+    }
+
+    .tombol--hantu:hover {
+      background: var(--biru-lat);
+      color: var(--biru-teks);
+      border-color: var(--biru);
+      box-shadow: none;
+    }
+
+    /* ---------- Kelompok lantai ---------- */
+    .grup { margin-bottom: 26px; }
+
+    .grup__judul {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: .74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      color: var(--teks-lembut);
+      margin-bottom: 11px;
+    }
+
+    .grup__judul::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--garis);
+    }
+
+    .grup__jumlah {
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: .72rem;
+      font-weight: 500;
+      color: var(--teks-lembut);
+      background: var(--permukaan);
+      border: 1px solid var(--garis);
+      border-radius: 999px;
+      padding: 2px 10px;
+    }
+
+    /* ---------- Baris kamar ---------- */
+    .kamar {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 8px 14px;
+      position: relative;
+      overflow: hidden;
+      background: var(--permukaan);
+      border: 1px solid var(--garis);
+      border-radius: var(--r-md);
+      box-shadow: var(--bayang-sm);
+      padding: 13px 16px 13px 20px;
+      margin-bottom: 9px;
+      transition: transform var(--transisi), box-shadow var(--transisi), border-color var(--transisi);
+    }
+
+    .kamar:hover { transform: translateY(-1px); box-shadow: var(--bayang-md); }
+
+    .kamar::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: var(--aksen);
+      transition: background var(--transisi);
+    }
+
+    .kamar--tersedia { --aksen: var(--ok); --aksen-lat: var(--ok-lat); --aksen-teks: var(--ok-teks); }
+    .kamar--hampir-penuh { --aksen: var(--sedang); --aksen-lat: var(--sedang-lat); --aksen-teks: var(--sedang-teks); }
+    .kamar--tidak-tersedia { --aksen: var(--penuh); --aksen-lat: var(--penuh-lat); --aksen-teks: var(--penuh-teks); }
+
+    .kamar__titik {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--aksen);
+      box-shadow: 0 0 0 4px var(--aksen-lat);
+      transition: background var(--transisi), box-shadow var(--transisi);
+    }
+
+    .kamar__nama {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-weight: 600;
+      font-size: .95rem;
+      line-height: 1.35;
+    }
+
+    .kamar__info {
+      font-size: .77rem;
+      color: var(--teks-lembut);
+      font-weight: 400;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Penanda "belum sama dengan isi js/status.js" — inilah yang membedakan kamar
+       yang baru diklik dari kamar yang memang sudah begitu di file. */
+    .kamar__tanda {
+      display: inline-flex;
+      align-items: center;
+      font-size: .64rem;
+      font-weight: 600;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      color: var(--biru-teks);
+      background: var(--biru-lat);
+      border: 1px solid var(--biru);
+      border-radius: 999px;
+      padding: 1px 9px;
+    }
+
+    /* ---------- Pemilih status ---------- */
+    .pilihan {
+      display: inline-flex;
+      gap: 3px;
+      padding: 3px;
+      border-radius: 999px;
+      background: var(--permukaan-2);
+      border: 1px solid var(--garis);
+    }
+
+    .pilihan button {
+      font: inherit;
+      font-size: .77rem;
+      font-weight: 500;
+      padding: 6px 14px;
+      border: 0;
+      border-radius: 999px;
+      background: transparent;
+      color: var(--teks-lembut);
+      cursor: pointer;
+      white-space: nowrap;
+      transition: background var(--transisi), color var(--transisi), box-shadow var(--transisi);
+    }
+
+    .pilihan button[data-nilai="tersedia"] { --aksen: var(--ok); --aksen-lat: var(--ok-lat); --aksen-teks: var(--ok-teks); }
+    .pilihan button[data-nilai="hampir-penuh"] { --aksen: var(--sedang); --aksen-lat: var(--sedang-lat); --aksen-teks: var(--sedang-teks); }
+    .pilihan button[data-nilai="tidak-tersedia"] { --aksen: var(--penuh); --aksen-lat: var(--penuh-lat); --aksen-teks: var(--penuh-teks); }
+
+    .pilihan button:hover { color: var(--aksen-teks); background: var(--aksen-lat); }
+
+    .pilihan button[aria-pressed="true"] {
+      font-weight: 600;
+      color: var(--aksen-teks);
+      background: var(--aksen-lat);
+      box-shadow: inset 0 0 0 1px var(--aksen);
+    }
+
+    /* ---------- Panel hasil ---------- */
+    .hasil { padding: 22px 24px; margin-bottom: 64px; }
+
+    .hasil__judul {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .hasil__desc { font-size: .85rem; color: var(--teks-lembut); margin-bottom: 14px; }
+
+    textarea {
+      display: block;
+      width: 100%;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .75rem;
+      line-height: 1.65;
+      padding: 16px;
+      border: 1px solid var(--garis);
+      border-radius: var(--r-sm);
+      background: var(--permukaan-2);
+      color: var(--teks);
+      resize: vertical;
+      tab-size: 4;
+    }
+
+    .hasil__kaki {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    .pesan {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: .82rem;
+      font-weight: 500;
+      color: var(--teks-lembut);
+    }
+
+    .pesan:empty { display: none; }
+    .pesan--sukses { color: var(--ok-teks); }
+    .pesan--peringatan { color: var(--sedang-teks); }
+    .pesan--gagal { color: var(--penuh-teks); }
+
+    code {
+      background: var(--biru-lat);
+      color: var(--biru-teks);
+      padding: 2px 7px;
+      border-radius: 6px;
+      font-size: .85em;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+
+    /* ---------- Pemberitahuan sesaat ---------- */
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 26px;
+      z-index: 80;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      max-width: calc(100vw - 40px);
+      padding: 12px 20px;
+      border-radius: 999px;
+      border: 1px solid var(--garis);
+      background: var(--permukaan);
+      color: var(--teks);
+      font-size: .85rem;
+      font-weight: 500;
+      box-shadow: var(--bayang-md);
+      transform: translate(-50%, 14px);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transisi), transform var(--transisi);
+    }
+
+    .toast--tampil { opacity: 1; transform: translate(-50%, 0); }
+    .toast--sukses { color: var(--ok-teks); border-color: var(--ok); }
+    .toast--gagal { color: var(--penuh-teks); border-color: var(--penuh); }
+
+    /* ---------- Keadaan gagal muat ---------- */
+    .galat {
+      padding: 26px 24px;
+      margin: 24px 0 64px;
+      border-color: var(--penuh);
+    }
+
+    .galat h2 { display: flex; align-items: center; gap: 10px; font-size: 1rem; margin-bottom: 10px; color: var(--penuh-teks); }
+    .galat p { font-size: .88rem; color: var(--teks-lembut); }
+    .galat p + p { margin-top: 8px; }
+
+    /* ---------- Layar kecil ---------- */
+    @media (max-width: 680px) {
+      .bungkus { padding: 0 16px; }
+      .kepala { padding: 26px 0 62px; }
+      .kepala__isi { align-items: flex-start; }
+      .panduan__kepala { padding: 16px 18px; }
+      .panduan__isi { padding: 0 18px 18px; }
+      .hasil { padding: 20px 18px; }
+
+      /* Bilah ini menempel di atas layar sepanjang halaman, jadi di layar kecil
+         ia harus tetap satu baris — dua baris memakan seperenam tinggi layar
+         ponsel terus-menerus. Caranya: keterangan panjang dipotong, dua tombol
+         sekunder jadi ikon saja, dan tidak ada yang boleh membungkus. */
+      .tema__pilih { padding: 7px 11px; }
+      .tema__teks { display: none; }
+
+      .bilah { flex-wrap: nowrap; gap: 8px; padding: 9px 10px; }
+      .bilah__hitung { flex: 1 1 auto; min-width: 0; padding-left: 2px; font-size: .76rem; gap: 7px; }
+      .bilah__hitung span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+      .bilah__ekor { display: none; }
+      .bilah__aksi { flex: 0 0 auto; flex-wrap: nowrap; gap: 6px; }
+      .bilah__aksi .tombol { padding: 10px 14px; gap: 7px; }
+      .bilah__aksi .tombol--hantu { padding: 10px 11px; }
+      .bilah__aksi .tombol--hantu .tombol__teks { display: none; }
+      .bilah__aksi .tombol__ekor { display: none; }
+
+      .kamar { grid-template-columns: auto 1fr; padding: 13px 14px 13px 18px; }
+      .pilihan { grid-column: 1 / -1; display: flex; }
+      .pilihan button { flex: 1; text-align: center; padding: 8px 6px; }
+      .ringkas__angka { font-size: 1.45rem; }
+
+      .toast { left: 16px; right: 16px; bottom: 16px; transform: translateY(14px); max-width: none; justify-content: center; }
+      .toast--tampil { transform: translateY(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+      .kamar:hover, .ringkas__kartu:hover, .tombol:hover, .kepala__tautan:hover { transform: none; }
+    }
+  </style>
+
+  <!-- Harus di <head>: memasang data-tema sebelum halaman digambar. -->
+  <script src="js/tema.js"></script>
+</head>
+
+<body>
+  <a class="lewati" href="#daftar">Langsung ke daftar kamar</a>
+
+  <header class="kepala">
+    <div class="bungkus kepala__isi">
+      <div>
+        <span class="kepala__merek">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          Kost H. Saifullah
+        </span>
+        <h1>Panel Status Kamar</h1>
+        <p class="kepala__sub">Tandai kamar yang terisi, lalu salin hasilnya ke berkas js/status.js.</p>
+      </div>
+      <div class="kepala__alat">
+        <div class="tema" role="group" aria-label="Tema tampilan">
+          <button type="button" class="tema__pilih" data-tema="terang" aria-pressed="false" title="Tampilan terang">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2"/><line x1="12" y1="1.5" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22.5"/><line x1="4.2" y1="4.2" x2="6" y2="6"/><line x1="18" y1="18" x2="19.8" y2="19.8"/><line x1="1.5" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22.5" y2="12"/><line x1="4.2" y1="19.8" x2="6" y2="18"/><line x1="18" y1="6" x2="19.8" y2="4.2"/>
+            </svg>
+            <span class="tema__teks">Terang</span>
+          </button>
+          <button type="button" class="tema__pilih" data-tema="gelap" aria-pressed="false" title="Tampilan gelap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <span class="tema__teks">Gelap</span>
+          </button>
+        </div>
+        <a class="kepala__tautan" href="index.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+          </svg>
+          Kembali ke website
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="bungkus">
+    <!-- Ditampilkan hanya bila js/data.js gagal dimuat. -->
+    <section class="kartu galat" id="galat" hidden aria-labelledby="judulGalat">
+      <h2 id="judulGalat">
+        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>
+        </svg>
+        Data kamar tidak bisa dimuat
+      </h2>
+      <p>File <code>js/data.js</code> tidak terbaca, jadi daftar kamarnya tidak bisa ditampilkan.</p>
+      <p>Pastikan <code>admin.html</code> dibuka dari dalam folder website yang lengkap — folder <code>js</code> harus berada di sebelah file ini.</p>
+    </section>
+
+    <details class="kartu panduan" id="panduan" open>
+      <summary class="panduan__kepala">
+        <span class="lencana">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/>
+          </svg>
+        </span>
+        <h2>Cara pakai</h2>
+        <svg class="panduan__panah" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </summary>
+      <div class="panduan__isi">
+        <ol>
+          <li>Klik status yang benar untuk tiap kamar di bawah.</li>
+          <li>Tekan tombol <strong>Salin hasil</strong>.</li>
+          <li>Buka file <code>js/status.js</code>, hapus seluruh isinya, tempel hasil salinan tadi.</li>
+          <li>Simpan file, lalu unggah ulang ke Netlify.</li>
+        </ol>
+        <p class="panduan__catatan">Halaman ini <strong>tidak menyimpan apa pun sendiri</strong> — ia hanya
+          menuliskan teks yang perlu Anda tempel. Selama belum ditempel ke <code>js/status.js</code>,
+          website belum berubah. Salah klik? Tutup saja halaman ini tanpa menyalin.</p>
+      </div>
+    </details>
+
+    <section class="ringkas" id="ringkas" aria-labelledby="judulRingkas">
+      <h2 class="sr-only" id="judulRingkas">Ringkasan status kamar</h2>
+      <div class="ringkas__kisi" id="ringkasan"></div>
+      <div class="proporsi" id="proporsi" role="img" aria-label="Proporsi status kamar"></div>
+    </section>
+
+    <div class="bilah" id="bilah">
+      <p class="bilah__hitung">
+        <span class="bilah__titik" aria-hidden="true"></span>
+        <span><span id="hitungTeks"></span><span class="bilah__ekor" id="hitungEkor"></span></span>
+      </p>
+      <div class="bilah__aksi">
+        <button type="button" class="tombol tombol--hantu" data-aksi="semua-tersedia" title="Tandai semua kamar sebagai tersedia">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+          <span class="tombol__teks">Semua tersedia</span>
+        </button>
+        <button type="button" class="tombol tombol--hantu" data-aksi="kembalikan" title="Kembalikan seperti isi file saat ini">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/>
+          </svg>
+          <span class="tombol__teks">Kembalikan</span>
+        </button>
+        <button type="button" class="tombol" data-aksi="salin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          <span class="tombol__teks">Salin<span class="tombol__ekor"> hasil</span></span>
+        </button>
+      </div>
+    </div>
+
+    <section id="daftar" aria-labelledby="judulDaftar">
+      <h2 class="sr-only" id="judulDaftar">Daftar kamar</h2>
+      <div id="daftarKamar"></div>
+    </section>
+
+    <section class="kartu hasil" id="hasil" aria-labelledby="judulHasil">
+      <h2 class="hasil__judul" id="judulHasil">
+        <span class="lencana">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+          </svg>
+        </span>
+        Hasil untuk <code>js/status.js</code>
+      </h2>
+      <p class="hasil__desc">Salin seluruh teks di bawah, lalu tempel ke <code>js/status.js</code> — timpa seluruh isinya.</p>
+
+      <textarea id="keluaran" rows="14" readonly spellcheck="false" aria-label="Isi baru untuk js/status.js"></textarea>
+
+      <div class="hasil__kaki">
+        <button type="button" class="tombol tombol--hantu" data-aksi="salin">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+          </svg>
+          <span class="tombol__teks">Salin hasil</span>
+        </button>
+        <p class="pesan" id="pesanSalin" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/status.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+
+</html>

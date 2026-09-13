@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Alat bantu pemilik kost, bukan halaman untuk pengunjung
+Disallow: /admin.html
+
+# GANTI dengan domain final setelah deploy ke Netlify
+Sitemap: https://kost-h-saifullah.netlify.app/sitemap.xml

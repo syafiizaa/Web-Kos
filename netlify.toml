@@ -1,0 +1,40 @@
+# ============================================================
+# Konfigurasi deploy Netlify — Kost H. Saifullah
+# Situs statis murni: tidak ada backend, tidak ada build step,
+# tidak ada data pengunjung yang disimpan.
+# ============================================================
+
+[build]
+  # Seluruh isi repo langsung dipublikasikan apa adanya.
+  publish = "."
+
+# --- Header keamanan untuk semua halaman ---
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), microphone=(), camera=(), interest-cohort=()"
+    # CSP disesuaikan dengan resource yang benar-benar dipakai situs ini.
+    # Kalau nanti menambah CDN, font, atau layanan baru, daftarnya harus ditambah di sini
+    # — kalau tidak, resource tersebut akan diblokir browser tanpa pesan error yang jelas.
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com; frame-src https://www.google.com; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+
+# --- Cache: HTML selalu divalidasi ulang, aset statis boleh disimpan sebentar ---
+# Tidak memakai cache panjang karena nama file (style.css, script.js) tidak ber-hash,
+# jadi perubahan harus langsung terlihat setelah deploy ulang.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
