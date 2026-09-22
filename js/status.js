@@ -24,27 +24,27 @@
 
 const STATUS_KAMAR = {
     // --- Lantai bawah ---
-    'pintu-1':  'tersedia',              // Pintu 1
-    'pintu-2':  'tersedia',              // Pintu 2
-    'pintu-3':  'tersedia',              // Pintu 3
-    'pintu-4':  'tersedia',              // Pintu 4
-    'pintu-5':  'tersedia',              // Pintu 5
-    'pintu-6':  'tersedia',              // Pintu 6
-    'pintu-7':  'tersedia',              // Pintu 7
-    'pintu-8':  'tersedia',              // Pintu 8
-    'pintu-9':  'tersedia',              // Pintu 9
-    'pintu-10': 'tersedia',              // Pintu 10
-    'pintu-11': 'tersedia',              // Pintu 11
-    'pintu-12': 'tersedia',              // Pintu 12
-    'pintu-13': 'tersedia',              // Pintu 13
-    'pintu-14': 'tersedia',              // Pintu 14
-    'pintu-15': 'tersedia',              // Pintu 15
+    'pintu-1':  'tidak-tersedia',        // Pintu 1
+    'pintu-2':  'tidak-tersedia',        // Pintu 2
+    'pintu-3':  'tidak-tersedia',        // Pintu 3
+    'pintu-4':  'tidak-tersedia',        // Pintu 4
+    'pintu-5':  'tidak-tersedia',        // Pintu 5
+    'pintu-6':  'tidak-tersedia',        // Pintu 6
+    'pintu-7':  'tidak-tersedia',        // Pintu 7
+    'pintu-8':  'tidak-tersedia',        // Pintu 8
+    'pintu-9':  'tidak-tersedia',        // Pintu 9
+    'pintu-10': 'tidak-tersedia',        // Pintu 10
+    'pintu-11': 'tidak-tersedia',        // Pintu 11
+    'pintu-12': 'tidak-tersedia',        // Pintu 12
+    'pintu-13': 'tidak-tersedia',        // Pintu 13
+    'pintu-14': 'tidak-tersedia',        // Pintu 14
+    'pintu-15': 'tidak-tersedia',        // Pintu 15
 
     // --- Lantai atas ---
     'atas-a1':  'tersedia',              // Kamar A1
-    'atas-a2':  'tersedia',              // Kamar A2
+    'atas-a2':  'tidak-tersedia',        // Kamar A2
     'atas-a3':  'tersedia',              // Kamar A3
-    'atas-b1':  'tersedia',              // Kamar B1
-    'atas-b2':  'tersedia',              // Kamar B2
-    'atas-b3':  'tersedia',              // Kamar B3
+    'atas-b1':  'tidak-tersedia',        // Kamar B1
+    'atas-b2':  'tidak-tersedia',        // Kamar B2
+    'atas-b3':  'tidak-tersedia',        // Kamar B3
 };
