@@ -678,15 +678,14 @@ const KOS_DATA = {
 
     // === FASILITAS UMUM (ikon dari internal SVG system) ===
     fasilitasUmum: [
-        { nama: 'WiFi', ikon: 'wifi' },
+        { nama: 'WiFi (Opsional)', ikon: 'wifi' },
         { nama: 'CCTV 24 Jam', ikon: 'shield' },
         { nama: 'Air & Listrik Gratis', ikon: 'zap' },
         { nama: 'Parkir Motor', ikon: 'truck' },
-        { nama: 'Keamanan 24 Jam', ikon: 'lock' },
         { nama: 'Tempat Jemur', ikon: 'sun' },
         { nama: 'Dapur & Kamar Mandi Dalam (Lantai Bawah)', ikon: 'droplet' },
         { nama: 'Dapur & Kamar Mandi Bersama (Lantai Atas)', ikon: 'coffee' },
-        { nama: 'Lokasi Strategis', ikon: 'map-pin' },
+        { nama: 'Dekat SMK', ikon: 'map-pin' },
     ],
 
     // === GALERI FOTO ===
