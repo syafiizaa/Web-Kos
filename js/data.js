@@ -13,7 +13,7 @@ const KOS_DATA = {
     deskripsi:
         'Kost H. Saifullah adalah hunian eksklusif laki-laki di Simpang Empat, Batulicin. Tersedia 21 kamar: 15 pintu di lantai bawah yang masing-masing punya dapur dan kamar mandi sendiri, serta 6 kamar di lantai atas dengan dapur dan kamar mandi bersama. Khusus untuk pelajar, mahasiswa, magang, dan karyawan. Sewa bulanan minimal 5 bulan, biaya sudah termasuk air dan listrik.',
     deskripsiSingkat:
-        'Hunian eksklusif laki-laki di Simpang Empat, Batulicin. 15 pintu dengan dapur & kamar mandi pribadi, plus 6 kamar di lantai atas. Air dan listrik sudah termasuk.',
+        'Kost yang berada di Seberang SMKN 1 Simpang Empat yang cocok untuk anak sekolah SMK karena berada tepat di seberang gerbang sekolah. Di kost ini Air dan listrik sudah termasuk dalam harga sewa perbulan.',
     nomorWA: '6281295256232', // Nomor WhatsApp tanpa "+" atau spasi (0812-9525-6232)
     alamat: 'Jl. Transmigrasi KM 6, seberang SMKN 1 Simpang Empat, Sari Gadung, Kec. Batulicin, Kab. Tanah Bumbu, Kalimantan Selatan 72221',
     kota: 'Batulicin',
