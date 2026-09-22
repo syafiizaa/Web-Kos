@@ -728,37 +728,32 @@ const KOS_DATA = {
         {
             ikon: 'map-pin',
             judul: 'Lokasi Strategis',
-            deskripsi: 'Berada di Simpang Empat, Batulicin — mudah diakses, dekat dengan berbagai fasilitas umum dan pusat kegiatan.',
+            deskripsi: 'Berada di seberang SMKN1 Simpang Empat, sehingga mudah diakses untuk anak sekolah.',
         },
         {
             ikon: 'home',
             judul: 'Khusus Laki-laki',
-            deskripsi: 'Lingkungan eksklusif untuk penghuni laki-laki (pelajar, mahasiswa, magang, karyawan). Suasana lebih kondusif dan nyaman.',
+            deskripsi: 'Kost untuk laki-laki (pelajar, mahasiswa, magang, karyawan).',
         },
         {
             ikon: 'zap',
             judul: 'Air & Listrik Gratis',
-            deskripsi: 'Biaya air dan listrik sudah termasuk dalam harga sewa. Tidak perlu pusing urus tagihan bulanan.',
+            deskripsi: 'Biaya air dan listrik sudah termasuk dalam harga sewa. Dengan syarat dan ketentuan berlaku.',
         },
         {
             ikon: 'dollar-sign',
             judul: 'Harga Terjangkau',
-            deskripsi: 'Mulai dari Rp 500.000 per bulan untuk 1 orang. Harga bersahabat dengan fasilitas lengkap.',
-        },
-        {
-            ikon: 'grid',
-            judul: 'Dua Pilihan Hunian',
-            deskripsi: '15 pintu di lantai bawah dengan dapur dan kamar mandi sendiri, atau 6 kamar di lantai atas yang lebih hemat dengan dapur dan kamar mandi bersama.',
+            deskripsi: 'Mulai dari Rp 500.000 per bulan untuk 1 orang.',
         },
         {
             ikon: 'shield',
             judul: 'Keamanan Terjaga',
-            deskripsi: 'CCTV 24 jam dan sistem keamanan terintegrasi. Lingkungan aman dan nyaman untuk ditinggali.',
+            deskripsi: 'CCTV 24 jam dan sistem keamanan terintegrasi. Lingkungan aman dan nyaman.',
         },
         {
             ikon: 'wifi',
-            judul: 'WiFi Cepat',
-            deskripsi: 'Akses internet WiFi cepat untuk menunjang aktivitas belajar dan bekerja online.',
+            judul: 'WiFi bebas langganan',
+            deskripsi: 'Akses internet WiFi stabil untuk menunjang aktivitas belajar dan bekerja tanpa langganan dan pilihan paket yang beragam.',
         },
     ],
 
@@ -767,9 +762,9 @@ const KOS_DATA = {
         { nama: 'Pusat Kecamatan Simpang Empat', jarak: '500 m' },
         { nama: 'Mini Market & Toko', jarak: '100 m' },
         { nama: 'Kawasan Kuliner', jarak: '300 m' },
-        { nama: 'Sekolah & Madrasah', jarak: '500 m' },
-        { nama: 'Pusat Kesehatan', jarak: '1 km' },
-        { nama: 'Pasar Tradisional', jarak: '1,5 km' },
+        { nama: 'Sekolah SMK', jarak: '120 m' },
+        { nama: 'Obat dan Kesehatan', jarak: '600 m' },
+        { nama: 'Pasar Tradisional (Hari minggu)', jarak: '1,5 km' },
     ],
 
     // === EDUKASI ===
