@@ -8,8 +8,8 @@
 const KOS_DATA = {
     // === INFORMASI UMUM ===
     nama: 'Kost H. Saifullah',
-    tagline: 'Kost Nyaman untuk Hunian Anda',
-    taglineSorot: 'Hunian Anda', // Bagian tagline yang diberi warna aksen di hero
+    tagline: 'Kost Aman dan Nyaman untuk Anda',
+    taglineSorot: 'Aman dan Nyaman', // Bagian tagline yang diberi warna aksen di hero
     deskripsi:
         'Kost H. Saifullah adalah hunian eksklusif laki-laki di Simpang Empat, Batulicin. Tersedia 21 kamar: 15 pintu di lantai bawah yang masing-masing punya dapur dan kamar mandi sendiri, serta 6 kamar di lantai atas dengan dapur dan kamar mandi bersama. Khusus untuk pelajar, mahasiswa, magang, dan karyawan. Sewa bulanan minimal 5 bulan, biaya sudah termasuk air dan listrik.',
     deskripsiSingkat:
