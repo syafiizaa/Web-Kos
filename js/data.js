@@ -16,7 +16,7 @@ const KOS_DATA = {
         'Kost yang berada di Seberang SMKN 1 Simpang Empat yang cocok untuk anak sekolah SMK karena berada tepat di seberang gerbang sekolah. Di kost ini Air dan listrik sudah termasuk dalam harga sewa perbulan.',
     nomorWA: '6281295256232', // Nomor WhatsApp tanpa "+" atau spasi (0812-9525-6232)
     alamat: 'Jl. Transmigrasi KM 6, seberang SMKN 1 Simpang Empat, Sari Gadung, Kec. Batulicin, Kab. Tanah Bumbu, Kalimantan Selatan 72221',
-    kota: 'Batulicin',
+    kota: 'Tanah Bumbu',
     provinsi: 'Kalimantan Selatan',
     // Peta diarahkan ke penanda resmi kost di Google Maps.
     // Angka 5050973779724392863 adalah ID tempat (CID) milik penanda tersebut —
