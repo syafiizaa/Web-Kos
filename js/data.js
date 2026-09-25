@@ -53,7 +53,7 @@ const KOS_DATA = {
 
     // === PERINGATAN KEAMANAN ===
     peringatan:
-        'Waspada terhadap penipuan! Calon penghuni WAJIB melihat wujud fisik kamar atau mendatangi lokasi langsung sebelum melakukan transfer uang.',
+        'Waspada terhadap penipuan yang mengatasnamakan pemilik kost di maps! Kami hanya memperbolehkan bayar ketika calon penghuni melihat wujud fisik kamar atau mendatangi lokasi langsung.',
 
     // === PESAN WHATSAPP OTOMATIS ===
     waPesanKamar: (namaKamar) =>
