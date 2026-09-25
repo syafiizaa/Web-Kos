@@ -11,7 +11,7 @@ const KOS_DATA = {
     tagline: 'Kost Aman dan Nyaman untuk Anda',
     taglineSorot: 'Aman dan Nyaman', // Bagian tagline yang diberi warna aksen di hero
     deskripsi:
-        'Kost H. Saifullah adalah hunian eksklusif laki-laki di Simpang Empat, Batulicin. Tersedia 21 kamar: 15 pintu di lantai bawah yang masing-masing punya dapur dan kamar mandi sendiri, serta 6 kamar di lantai atas dengan dapur dan kamar mandi bersama. Khusus untuk pelajar, mahasiswa, magang, dan karyawan. Sewa bulanan minimal 5 bulan, biaya sudah termasuk air dan listrik.',
+        'Kost H. Saifullah adalah hunian khusus laki-laki di Seberang SMKN 1 Simpang Empat, Tanah Bumbu. Tersedia 21 kamar: 15 pintu di lantai bawah yang masing-masing punya dapur dan kamar mandi sendiri, serta 6 kamar di lantai atas dengan dapur dan kamar mandi bersama. Khusus untuk pelajar, mahasiswa, magang, dan karyawan. Sewa bulanan minimal 5 bulan, biaya perbulan sudah termasuk air dan listrik.',
     deskripsiSingkat:
         'Kost yang berada di Seberang SMKN 1 Simpang Empat yang cocok untuk anak sekolah SMK karena berada tepat di seberang gerbang sekolah. Di kost ini Air dan listrik sudah termasuk dalam harga sewa perbulan.',
     nomorWA: '6281295256232', // Nomor WhatsApp tanpa "+" atau spasi (0812-9525-6232)
