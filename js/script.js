@@ -524,7 +524,7 @@ function renderInfoPenting() {
       <div class="alert-banner" role="alert">
         <div class="alert-banner__icon">${iconSvg('alert-triangle', 24)}</div>
         <div>
-          <strong style="display:block;margin-bottom:4px;">⚠️ Peringatan Keamanan</strong>
+          <strong style="display:block;margin-bottom:4px;">⚠️ WASPADA PENIPUAN KOST</strong>
           ${esc(KOS_DATA.peringatan)}
         </div>
       </div>
