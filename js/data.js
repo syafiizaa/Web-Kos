@@ -38,8 +38,8 @@ const KOS_DATA = {
     jumlahKamarTersediaAwal: 3, // Bagian "Kamar Tersedia" di beranda
     jumlahKamarAwal: 9,         // Halaman kamar.html (daftar lengkap + filter)
     minimalSewa: '5 bulan',
-    sistemPemesanan: 'Siapa cepat, dia dapat (first-come, first-served). Tidak ada reservasi. Kamar diberikan kepada yang pertama konfirmasi setelah kamar kosong.',
-    biayaTermasuk: 'Air dan listrik sudah termasuk dalam harga sewa.',
+    sistemPemesanan: 'Saat Peminat khusus anak SMK banyak dan kapasitas kamar terbatas maka berlaku sistem siapa cepat, dia dapat. Kamar diberikan kepada yang pertama konfirmasi setelah dinyatakan lulus tes masuk SMK.',
+    biayaTermasuk: 'Air dan listrik sudah termasuk dalam harga sewa perbulan (syarat ketentuan berlaku).',
 
     // === METODE PEMBAYARAN ===
     metodeBayar: [
