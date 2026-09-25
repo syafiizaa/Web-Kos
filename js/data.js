@@ -759,6 +759,7 @@ const KOS_DATA = {
 
     // === TEMPAT DI SEKITAR LOKASI ===
     tempatSekitar: [
+        { nama: 'Masjid terdekat', jarak: '500 m' },
         { nama: 'Mini Market / Toko kebutuhan harian', jarak: '100 m' },
         { nama: 'Sekolah SMK', jarak: '120 m' },
         { nama: 'Apotek terdekat', jarak: '600 m' },
