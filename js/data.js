@@ -759,12 +759,10 @@ const KOS_DATA = {
 
     // === TEMPAT DI SEKITAR LOKASI ===
     tempatSekitar: [
-        { nama: 'Pusat Kecamatan Simpang Empat', jarak: '500 m' },
-        { nama: 'Mini Market & Toko', jarak: '100 m' },
-        { nama: 'Kawasan Kuliner', jarak: '300 m' },
+        { nama: 'Mini Market / Toko kebutuhan harian', jarak: '100 m' },
         { nama: 'Sekolah SMK', jarak: '120 m' },
-        { nama: 'Obat dan Kesehatan', jarak: '600 m' },
-        { nama: 'Pasar Tradisional (Hari minggu)', jarak: '1,5 km' },
+        { nama: 'Apotek terdekat', jarak: '600 m' },
+        { nama: 'Pasar Lingkar 30 (Hari minggu)', jarak: '1,5 km' },
     ],
 
     // === EDUKASI ===
