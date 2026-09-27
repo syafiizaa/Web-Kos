@@ -259,11 +259,6 @@ function renderRoomCard(kamar) {
           <button type="button" class="btn btn-primary btn-sm btn-detail" data-id="${esc(kamar.id)}" aria-label="Lihat detail ${nama}" style="flex:1;justify-content:center;">
             Lihat Detail
           </button>
-          <a href="${waUrl(KOS_DATA.nomorWA, waTextKamar(kamar))}" target="_blank" rel="noopener"
-             data-action="pra-pesan" data-id="${esc(kamar.id)}"
-             class="btn ${penuh ? 'btn-ghost' : 'btn-wa'} btn-sm" aria-label="${waLabel}" style="justify-content:center;">
-            ${iconSvg('message-circle', 16)} ${penuh ? 'Kabari' : 'WA'}
-          </a>
         </div>
       </div>
     </article>

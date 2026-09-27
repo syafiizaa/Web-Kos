@@ -253,10 +253,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -274,10 +271,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -294,10 +288,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -314,10 +305,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -335,10 +323,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -356,10 +341,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -377,10 +359,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -398,10 +377,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -419,10 +395,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -440,10 +413,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -461,10 +431,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -482,10 +449,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -503,10 +467,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -524,10 +485,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -545,10 +503,7 @@ const KOS_DATA = {
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
                 'WiFi Pribadi (Opsional)',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
-                'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
-            ],
+            foto: [],
 
         },
 
@@ -568,10 +523,7 @@ const KOS_DATA = {
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
-                'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -588,10 +540,7 @@ const KOS_DATA = {
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
-                'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -608,10 +557,7 @@ const KOS_DATA = {
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
-                'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -628,10 +574,7 @@ const KOS_DATA = {
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
-                'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -648,10 +591,7 @@ const KOS_DATA = {
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
-                'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
-            ],
+            foto: [],
 
         },
         {
@@ -668,10 +608,7 @@ const KOS_DATA = {
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
             ],
-            foto: [
-                'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
-                'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
-            ],
+            foto: [],
 
         },
     ],
@@ -690,37 +627,13 @@ const KOS_DATA = {
 
     // === GALERI FOTO ===
     galeri: {
-        'Bagian Luar': [
-            'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=600&q=80',
-            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80',
-            'https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?w=600&q=80',
-        ],
-        'Area Kamar': [
-            'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=600&q=80',
-            'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=600&q=80',
-            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80',
-            'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600&q=80',
-        ],
-        'Kamar Mandi': [
-            'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=600&q=80',
-            'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=600&q=80',
-        ],
-        'Area Bersama': [
-            'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80',
-            'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80',
-        ],
-        'Dapur': [
-            'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80',
-            'https://images.unsplash.com/photo-1556909172-54557c7e4fb7?w=600&q=80',
-        ],
-        'Parkir': [
-            'https://images.unsplash.com/photo-1573342212426-07a3e53f3f6e?w=600&q=80',
-            'https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=600&q=80',
-        ],
-        'Lingkungan Sekitar': [
-            'https://images.unsplash.com/photo-1444723121867-7a241cacace9?w=600&q=80',
-            'https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=600&q=80',
-        ],
+        'Bagian Luar': [],
+        'Area Kamar': [],
+        'Kamar Mandi': [],
+        'Area Bersama': [],
+        'Dapur': [],
+        'Parkir': [],
+        'Lingkungan Sekitar': [],
     },
 
     // === KEUNGGULAN ===
