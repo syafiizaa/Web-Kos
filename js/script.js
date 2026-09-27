@@ -301,12 +301,7 @@ function renderRoomModal(kamar) {
         `<div class="modal__facility-item">${iconSvg('check', 16)} ${esc(f)}</div>`
     ).join('');
 
-    const kamarMandiHtml = kamar.fotoKamarMandi ? `
-      <div class="modal__bathroom">
-        <h3 class="modal__bathroom-title">Kamar Mandi</h3>
-        <img class="modal__bathroom-img" src="${esc(kamar.fotoKamarMandi)}" alt="Kamar mandi ${nama}" loading="lazy">
-      </div>
-    ` : '';
+    const kamarMandiHtml = '';
 
     return `
     <div class="modal-overlay" id="roomModal">

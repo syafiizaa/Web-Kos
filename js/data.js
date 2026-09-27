@@ -250,14 +250,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-2',
@@ -271,14 +271,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-3',
@@ -291,14 +291,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Pintu 3 khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-4',
@@ -311,14 +311,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Pintu 4 khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-5',
@@ -332,14 +332,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-6',
@@ -353,14 +353,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-7',
@@ -374,14 +374,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-8',
@@ -395,14 +395,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-9',
@@ -416,14 +416,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-10',
@@ -437,14 +437,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-11',
@@ -458,14 +458,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-12',
@@ -479,14 +479,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-13',
@@ -500,14 +500,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-14',
@@ -521,14 +521,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
         {
             id: 'pintu-15',
@@ -542,14 +542,14 @@ const KOS_DATA = {
             deskripsi:
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'WiFi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
                 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=80',
+
         },
 
         // LANTAI ATAS — 6 kamar (A1–A3, B1–B3). Dapur dipakai bersama dan
@@ -565,14 +565,14 @@ const KOS_DATA = {
             deskripsi:
                 'Kamar A1 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Bersama', 'Kamar Mandi Bersama', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
+                'WiFi (Opsional)', 'Kulkas Bersama',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
                 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80',
+
         },
         {
             id: 'atas-a2',
@@ -585,14 +585,14 @@ const KOS_DATA = {
             deskripsi:
                 'Kamar A2 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Bersama', 'Kamar Mandi Bersama', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
+                'WiFi (Opsional)', 'Kulkas Bersama',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
                 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80',
+
         },
         {
             id: 'atas-a3',
@@ -605,14 +605,14 @@ const KOS_DATA = {
             deskripsi:
                 'Kamar A3 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Bersama', 'Kamar Mandi Bersama', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
+                'WiFi (Opsional)', 'Kulkas Bersama',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
                 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80',
+
         },
         {
             id: 'atas-b1',
@@ -625,14 +625,14 @@ const KOS_DATA = {
             deskripsi:
                 'Kamar B1 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Bersama', 'Kamar Mandi Bersama', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
+                'WiFi (Opsional)', 'Kulkas Bersama',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
                 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80',
+
         },
         {
             id: 'atas-b2',
@@ -645,14 +645,14 @@ const KOS_DATA = {
             deskripsi:
                 'Kamar B2 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Bersama', 'Kamar Mandi Bersama', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
+                'WiFi (Opsional)', 'Kulkas Bersama',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
                 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80',
+
         },
         {
             id: 'atas-b3',
@@ -665,14 +665,14 @@ const KOS_DATA = {
             deskripsi:
                 'Kamar B3 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
-                'Dapur Bersama', 'Kamar Mandi Bersama', 'Tempat Tidur + Kasur', 'Lemari Pakaian',
-                'Meja Belajar + Kursi', 'Air & Listrik Gratis', 'Jendela Ventilasi',
+                'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
+                'WiFi (Opsional)', 'Kulkas Bersama',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
                 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80',
             ],
-            fotoKamarMandi: 'https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=80',
+
         },
     ],
 
