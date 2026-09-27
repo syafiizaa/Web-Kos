@@ -251,7 +251,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -272,7 +272,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -292,7 +292,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Pintu 3 khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -312,7 +312,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Pintu 4 khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -333,7 +333,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -354,7 +354,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -375,7 +375,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -396,7 +396,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -417,7 +417,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -438,7 +438,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -459,7 +459,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -480,7 +480,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -501,7 +501,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -522,7 +522,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -543,7 +543,7 @@ const KOS_DATA = {
                 'Satu pintu berisi kamar tidur, dapur, dan kamar mandi sendiri — tidak berbagi dengan penghuni lain. Bisa dihuni 1 sampai 2 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Pribadi', 'Kamar Mandi Dalam', 'Air & Listrik Gratis', 'Jendela Ventilasi',
-                'WiFi (Opsional)',
+                'WiFi Pribadi (Opsional)',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1522771739017-7eb0a0e6b3e2?w=800&q=80',
@@ -566,7 +566,7 @@ const KOS_DATA = {
                 'Kamar A1 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
-                'WiFi (Opsional)', 'Kulkas Bersama',
+                'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
@@ -586,7 +586,7 @@ const KOS_DATA = {
                 'Kamar A2 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
-                'WiFi (Opsional)', 'Kulkas Bersama',
+                'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
@@ -606,7 +606,7 @@ const KOS_DATA = {
                 'Kamar A3 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
-                'WiFi (Opsional)', 'Kulkas Bersama',
+                'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
@@ -626,7 +626,7 @@ const KOS_DATA = {
                 'Kamar B1 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
-                'WiFi (Opsional)', 'Kulkas Bersama',
+                'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
@@ -646,7 +646,7 @@ const KOS_DATA = {
                 'Kamar B2 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
-                'WiFi (Opsional)', 'Kulkas Bersama',
+                'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
@@ -666,7 +666,7 @@ const KOS_DATA = {
                 'Kamar B3 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
-                'WiFi (Opsional)', 'Kulkas Bersama',
+                'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
             ],
             foto: [
                 'https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?w=800&q=80',
@@ -678,7 +678,7 @@ const KOS_DATA = {
 
     // === FASILITAS UMUM (ikon dari internal SVG system) ===
     fasilitasUmum: [
-        { nama: 'WiFi (Opsional)', ikon: 'wifi' },
+        { nama: 'WiFi Pribadi (Opsional)', ikon: 'wifi' },
         { nama: 'CCTV 24 Jam', ikon: 'shield' },
         { nama: 'Air & Listrik Gratis', ikon: 'zap' },
         { nama: 'Parkir Motor', ikon: 'truck' },
