@@ -201,7 +201,7 @@ const KOS_DATA = {
                     isi: 'Air dan listrik sudah termasuk harga sewa. Gunakan secukupnya dan matikan alat listrik saat tidak dipakai.',
                 },
                 {
-                    judul: 'Dilarang membawa narkoba, minuman keras dab judi',
+                    judul: 'Dilarang membawa narkoba, minuman keras dan judi',
                     isi: 'Dilarang membawa, menyimpan, atau memakai narkoba dan minuman keras serta berjudi di lingkungan kost.',
                 },
                 {
