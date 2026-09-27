@@ -31,7 +31,7 @@ const KOS_DATA = {
     mapsEmbed: 'https://www.google.com/maps/embed?pb=!1m3!3m2!1m1!4s5050973779724392863',
 
     // === TARGET & ATURAN ===
-    targetPenghuni: 'Laki-laki (pelajar, mahasiswa, magang, karyawan)',
+    targetPenghuni: 'Laki-laki — Lantai Bawah: pelajar, mahasiswa, magang, karyawan | Lantai Atas: khusus pelajar',
     maksPerKamar: 2, // Batas umum; tiap kamar bisa menimpanya lewat `maksOrang`.
     // Berapa kartu kamar yang digambar lebih dulu. Sisanya baru muncul kalau
     // pengunjung sendiri menekan tombol "Tampilkan lebih banyak".
@@ -128,9 +128,9 @@ const KOS_DATA = {
                 label: 'Status Anda saat ini',
                 ikon: 'book',
                 opsi: [
-                    { nilai: 'Mahasiswa' },
+                    { nilai: 'Mahasiswa', nonaktifTipe: ['Kamar Lantai Atas'], catatanNonaktif: '(Kamar atas khusus pelajar)' },
                     { nilai: 'Pelajar' },
-                    { nilai: 'Magang' },
+                    { nilai: 'Magang', nonaktifTipe: ['Kamar Lantai Atas'], catatanNonaktif: '(Kamar atas khusus pelajar)' },
                 ],
             },
         ],
@@ -563,7 +563,7 @@ const KOS_DATA = {
             maksOrang: 1,
             kapasitas: '1 orang',
             deskripsi:
-                'Kamar A1 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
+                'Kamar A1 di lantai atas — khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Hanya untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
@@ -583,7 +583,7 @@ const KOS_DATA = {
             maksOrang: 1,
             kapasitas: '1 orang',
             deskripsi:
-                'Kamar A2 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
+                'Kamar A2 di lantai atas — khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Hanya untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
@@ -603,7 +603,7 @@ const KOS_DATA = {
             maksOrang: 1,
             kapasitas: '1 orang',
             deskripsi:
-                'Kamar A3 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
+                'Kamar A3 di lantai atas — khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Hanya untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
@@ -623,7 +623,7 @@ const KOS_DATA = {
             maksOrang: 1,
             kapasitas: '1 orang',
             deskripsi:
-                'Kamar B1 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
+                'Kamar B1 di lantai atas — khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Hanya untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
@@ -643,7 +643,7 @@ const KOS_DATA = {
             maksOrang: 1,
             kapasitas: '1 orang',
             deskripsi:
-                'Kamar B2 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
+                'Kamar B2 di lantai atas — khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Hanya untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
@@ -663,7 +663,7 @@ const KOS_DATA = {
             maksOrang: 1,
             kapasitas: '1 orang',
             deskripsi:
-                'Kamar B3 di lantai atas. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Khusus untuk 1 orang. Air dan listrik sudah termasuk.',
+                'Kamar B3 di lantai atas — khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Hanya untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
                 'WiFi Pribadi (Opsional)', 'Kulkas Bersama',

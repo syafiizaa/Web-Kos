@@ -1046,7 +1046,8 @@ function renderPraPesan(kamar, cfg) {
             // diklik, tidak bisa dipilih lewat keyboard, dan dilewati saat Tab.
             // `orang` mematikannya per kamar (mis. "2 orang" di kamar khusus 1 orang).
             const nonaktif = !!opsi.nonaktif ||
-                (opsi.orang != null && Number(opsi.orang) > maksOrang);
+                (opsi.orang != null && Number(opsi.orang) > maksOrang) ||
+                (Array.isArray(opsi.nonaktifTipe) && opsi.nonaktifTipe.includes(kamar.tipe));
             const catatan = (nonaktif && opsi.catatanNonaktif) ? opsi.catatanNonaktif : opsi.catatan;
             return `
             <label class="prapesan__option${nonaktif ? ' prapesan__option--nonaktif' : ''}" for="${inputId}">
