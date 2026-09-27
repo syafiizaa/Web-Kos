@@ -185,6 +185,10 @@ const KOS_DATA = {
                     isi: 'Tidak membuat kegaduhan yang mengganggu penghuni lain, terutama pada malam hari.',
                 },
                 {
+                    judul: 'Jam tidur pukul 22.00–06.00',
+                    isi: 'Dilarang melakukan aktivitas yang mengganggu ketenangan pada jam tidur, mulai pukul 22.00 malam hingga 06.00 pagi.',
+                },
+                {
                     judul: 'Dilarang memakai knalpot brong',
                     isi: 'Motor berknalpot brong tidak boleh dipakai di lingkungan kost karena suaranya mengganggu penghuni lain dan tetangga sekitar.',
                 },
