@@ -154,7 +154,7 @@ const KOS_DATA = {
             items: [
                 {
                     judul: 'Perempuan dilarang masuk',
-                    isi: 'Perempuan dilarang masuk ke dalam kamar maupun area dalam kost, dalam keadaan apa pun.',
+                    isi: 'Perempuan dilarang masuk ke dalam kamar maupun area dalam kost, dengan alasan apa pun.',
                 },
                 {
                     judul: 'Tamu wajib seizin pemilik',
@@ -162,23 +162,23 @@ const KOS_DATA = {
                 },
                 {
                     judul: 'Tamu dilarang menginap',
-                    isi: 'Tamu tidak diperbolehkan menginap di kamar tanpa izin pemilik kost.',
+                    isi: 'Tamu tidak diperbolehkan menginap tanpa izin pemilik kost (kecuali orang tua siswa).',
                 },
                 {
                     judul: 'Dilarang membawa tamu dalam jumlah banyak',
-                    isi: 'Air dan listrik kost diperuntukkan bagi penghuni, bukan untuk rombongan tamu. Bila ingin berkumpul ramai-ramai, silakan lakukan di luar kost.',
+                    isi: 'Fasilitas Air dan listrik kost diperuntukkan bagi penghuni, bukan untuk rombongan tamu. Bila ingin berkumpul ramai-ramai, silakan lakukan di luar kost.',
                 },
                 {
                     judul: 'Pembayaran tepat waktu',
-                    isi: 'Sewa dibayarkan setiap bulan tepat pada tanggal jatuh temponya.',
+                    isi: 'Sewa dibayarkan setiap bulan tepat pada tanggal anda masuk pertama kali.',
                 },
                 {
-                    judul: 'Tidak ada sistem reservasi',
-                    isi: 'Kamar diberikan kepada yang lebih dulu melakukan konfirmasi setelah kamar kosong — siapa cepat, dia dapat.',
+                    judul: 'Tidak ada sistem booking duluan',
+                    isi: 'Demi menghindari penipuan kami tidak menerima booking kamar di WA maupun telepon.',
                 },
                 {
                     judul: 'Menjaga kebersihan',
-                    isi: 'Menjaga kebersihan kamar sendiri serta area bersama seperti kamar mandi, dapur, dan halaman.',
+                    isi: 'Menjaga kebersihan serta area bersama seperti kamar mandi, dapur, dan halaman.',
                 },
                 {
                     judul: 'Menjaga ketenangan',
@@ -189,7 +189,7 @@ const KOS_DATA = {
                     isi: 'Motor berknalpot brong tidak boleh dipakai di lingkungan kost karena suaranya mengganggu penghuni lain dan tetangga sekitar.',
                 },
                 {
-                    judul: 'Motor yang masuk ke dalam kost wajib beralas',
+                    judul: 'Motor yang masuk ke dalam kost wajib memakai alas',
                     isi: 'Motor yang dimasukkan ke dalam kost wajib diberi alas di bawahnya agar lantai keramik tidak lecet atau tergores.',
                 },
                 {
@@ -197,12 +197,8 @@ const KOS_DATA = {
                     isi: 'Air dan listrik sudah termasuk harga sewa. Gunakan secukupnya dan matikan alat listrik saat tidak dipakai.',
                 },
                 {
-                    judul: 'Dilarang membawa narkoba & minuman keras',
-                    isi: 'Dilarang membawa, menyimpan, atau memakai narkoba dan minuman keras di lingkungan kost.',
-                },
-                {
-                    judul: 'Dilarang berjudi',
-                    isi: 'Segala bentuk perjudian dilarang di dalam kamar maupun di lingkungan kost.',
+                    judul: 'Dilarang membawa narkoba, minuman keras dab judi',
+                    isi: 'Dilarang membawa, menyimpan, atau memakai narkoba dan minuman keras serta berjudi di lingkungan kost.',
                 },
                 {
                     judul: 'Dilarang membawa senjata tajam',
@@ -214,7 +210,7 @@ const KOS_DATA = {
                 },
                 {
                     judul: 'Wajib cek kamar sebelum transfer',
-                    isi: 'Calon penghuni wajib melihat wujud fisik kamar atau mendatangi lokasi langsung sebelum melakukan pembayaran.',
+                    isi: 'Demi menghindari penipuan kami tidak pernah meminta transfer uang booking.',
                 },
             ],
         },
