@@ -206,7 +206,7 @@ const KOS_DATA = {
                 },
                 {
                     judul: 'Kerusakan menjadi tanggung jawab penghuni',
-                    isi: 'Kerusakan fasilitas kamar akibat kelalaian penghuni menjadi tanggung jawab penghuni yang bersangkutan.',
+                    isi: 'Kerusakan fasilitas akibat kelalaian penghuni menjadi tanggung jawab penghuni yang bersangkutan.',
                 },
                 {
                     judul: 'Wajib cek kamar sebelum transfer',
