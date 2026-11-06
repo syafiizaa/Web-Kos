@@ -11,7 +11,7 @@ const KOS_DATA = {
     tagline: 'Kost Aman dan Nyaman untuk Anda',
     taglineSorot: 'Aman dan Nyaman', // Bagian tagline yang diberi warna aksen di hero
     deskripsi:
-        'Kost H. Saifullah adalah hunian khusus laki-laki di Seberang SMKN 1 Simpang Empat, Tanah Bumbu. Tersedia 21 kamar: 15 pintu di lantai bawah yang masing-masing punya dapur dan kamar mandi sendiri, serta 6 kamar di lantai atas dengan dapur dan kamar mandi bersama. Khusus untuk pelajar, mahasiswa, magang, dan karyawan. Sewa bulanan minimal 5 bulan, biaya perbulan sudah termasuk air dan listrik.',
+        'Kost H. Saifullah adalah hunian khusus laki-laki di Seberang SMKN 1 Simpang Empat, Tanah Bumbu. Tersedia 21 kamar: 15 pintu di lantai bawah yang masing-masing punya dapur dan kamar mandi sendiri, serta 6 kamar di lantai atas dengan dapur dan kamar mandi bersama. Khusus untuk pelajar dan magang. Sewa bulanan minimal 5 bulan, biaya perbulan sudah termasuk air dan listrik.',
     deskripsiSingkat:
         'Kost yang berada di Seberang SMKN 1 Simpang Empat yang cocok untuk anak sekolah SMK karena berada tepat di seberang gerbang sekolah. Di kost ini Air dan listrik sudah termasuk dalam harga sewa perbulan.',
     nomorWA: '6281295256232', // Nomor WhatsApp tanpa "+" atau spasi (0812-9525-6232)
@@ -31,7 +31,7 @@ const KOS_DATA = {
     mapsEmbed: 'https://www.google.com/maps/embed?pb=!1m3!3m2!1m1!4s5050973779724392863',
 
     // === TARGET & ATURAN ===
-    targetPenghuni: 'Laki-laki — Lantai Bawah: pelajar, mahasiswa, magang, karyawan | Lantai Atas: khusus pelajar',
+    targetPenghuni: 'Laki-laki — Lantai Bawah: pelajar, magang | Lantai Atas: khusus pelajar',
     maksPerKamar: 2, // Batas umum; tiap kamar bisa menimpanya lewat `maksOrang`.
     // Berapa kartu kamar yang digambar lebih dulu. Sisanya baru muncul kalau
     // pengunjung sendiri menekan tombol "Tampilkan lebih banyak".
@@ -128,7 +128,6 @@ const KOS_DATA = {
                 label: 'Status Anda saat ini',
                 ikon: 'book',
                 opsi: [
-                    { nilai: 'Mahasiswa', nonaktifTipe: ['Kamar Lantai Atas'], catatanNonaktif: '(Kamar atas khusus pelajar)' },
                     { nilai: 'Pelajar' },
                     { nilai: 'Magang', nonaktifTipe: ['Kamar Lantai Atas'], catatanNonaktif: '(Kamar atas khusus pelajar)' },
                 ],
@@ -518,10 +517,10 @@ const KOS_DATA = {
             maksOrang: 1,
             kapasitas: '1 orang',
             deskripsi:
-                'Kamar A1 di lantai atas — khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Hanya untuk 1 orang. Air dan listrik sudah termasuk.',
+                'Kamar A1 di lantai atas khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Masing-masing kamar hanya untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
-                'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
+                'WiFi Pribadi (Opsional)', 'Kulkas Bersama', 'Jemuran di Balkon',
             ],
             foto: [],
 
@@ -535,10 +534,10 @@ const KOS_DATA = {
             maksOrang: 1,
             kapasitas: '1 orang',
             deskripsi:
-                'Kamar A2 di lantai atas — khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Hanya untuk 1 orang. Air dan listrik sudah termasuk.',
+                'Kamar A2 di lantai atas khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Masing-masing kamar hanya untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
-                'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
+                'WiFi Pribadi (Opsional)', 'Kulkas Bersama', 'Jemuran di Balkon',
             ],
             foto: [],
 
@@ -552,10 +551,10 @@ const KOS_DATA = {
             maksOrang: 1,
             kapasitas: '1 orang',
             deskripsi:
-                'Kamar A3 di lantai atas — khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Hanya untuk 1 orang. Air dan listrik sudah termasuk.',
+                'Kamar A3 di lantai atas khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Masing-masing kamar hanya untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
-                'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
+                'WiFi Pribadi (Opsional)', 'Kulkas Bersama', 'Jemuran di Balkon',
             ],
             foto: [],
 
@@ -569,10 +568,10 @@ const KOS_DATA = {
             maksOrang: 1,
             kapasitas: '1 orang',
             deskripsi:
-                'Kamar B1 di lantai atas — khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Hanya untuk 1 orang. Air dan listrik sudah termasuk.',
+                'Kamar B1 di lantai atas khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Masing-masing kamar hanya untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
-                'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
+                'WiFi Pribadi (Opsional)', 'Kulkas Bersama', 'Jemuran di Balkon',
             ],
             foto: [],
 
@@ -586,10 +585,10 @@ const KOS_DATA = {
             maksOrang: 1,
             kapasitas: '1 orang',
             deskripsi:
-                'Kamar B2 di lantai atas — khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Hanya untuk 1 orang. Air dan listrik sudah termasuk.',
+                'Kamar B2 di lantai atas khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Masing-masing kamar hanya untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
-                'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
+                'WiFi Pribadi (Opsional)', 'Kulkas Bersama', 'Jemuran di Balkon',
             ],
             foto: [],
 
@@ -603,10 +602,10 @@ const KOS_DATA = {
             maksOrang: 1,
             kapasitas: '1 orang',
             deskripsi:
-                'Kamar B3 di lantai atas — khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Hanya untuk 1 orang. Air dan listrik sudah termasuk.',
+                'Kamar B3 di lantai atas khusus pelajar. Dapur dan kamar mandi dipakai bersama penghuni lantai atas (tersedia 6 kamar mandi). Masing-masing kamar hanya untuk 1 orang. Air dan listrik sudah termasuk.',
             fasilitas: [
                 'Dapur Bersama', 'Kamar Mandi Bersama', 'Air & Listrik Gratis',
-                'WiFi Pribadi (Opsional)', 'Kulkas Bersama',
+                'WiFi Pribadi (Opsional)', 'Kulkas Bersama', 'Jemuran di Balkon',
             ],
             foto: [],
 
@@ -646,7 +645,7 @@ const KOS_DATA = {
         {
             ikon: 'home',
             judul: 'Khusus Laki-laki',
-            deskripsi: 'Kost untuk laki-laki (pelajar, mahasiswa, magang, karyawan).',
+            deskripsi: 'Kost untuk laki-laki (pelajar dan magang).',
         },
         {
             ikon: 'zap',
@@ -684,9 +683,9 @@ const KOS_DATA = {
         {
             judul: 'Aturan Kost',
             items: [
-                'Khusus penghuni laki-laki (pelajar, mahasiswa, magang, karyawan)',
+                'Khusus penghuni laki-laki (pelajar dan magang)',
                 'Pintu lantai bawah maksimal 2 orang, kecuali Pintu 3 dan Pintu 4',
-                'Kamar lantai atas (A1–B3) dan Pintu 3 & 4 khusus 1 orang',
+                'Kamar lantai atas khusus 1 orang',
                 'Minimal kontrak sewa 5 bulan (pembayaran per bulan)',
                 'Pakai air dan listrik sewajarnya',
                 'Dilarang membawa tamu menginap tanpa izin (kecuali orang tua siswa)',
