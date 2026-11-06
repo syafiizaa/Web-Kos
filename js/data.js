@@ -684,7 +684,7 @@ const KOS_DATA = {
             judul: 'Aturan Kost',
             items: [
                 'Khusus penghuni laki-laki (pelajar dan magang)',
-                'Pintu lantai bawah maksimal 2 orang, kecuali Pintu 3 dan Pintu 4',
+                'Pintu lantai bawah maksimal 2 orang, kecuali Pintu 3 dan Pintu 4 (khusus 1 orang)',
                 'Kamar lantai atas khusus 1 orang',
                 'Minimal kontrak sewa 5 bulan (pembayaran per bulan)',
                 'Pakai air dan listrik sewajarnya',
